@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import AppBar from '@material-ui/core/AppBar';
-import { Typography, Card, CardContent, CardMedia, CssBaseline, Grid, Toolbar, Container } from '@material-ui/core';
+import { Typography, CssBaseline, Grid, Toolbar, Container } from '@material-ui/core';
 import { ThemeProvider as MuiThemeProvider } from '@material-ui/core/styles';
 import { List, ListItem, ListItemText } from '@material-ui/core/';
 import Button from '@material-ui/core/Button';
-import { Done } from '@material-ui/icons'
+import { Done, Copyright } from '@material-ui/icons'
 
 export class Confirm extends Component {
   continue = e => {
@@ -36,7 +36,7 @@ export class Confirm extends Component {
             </AppBar>
 
             <main>
-              <div>
+              <div id="confirmacao">
                 <Container maxWidth="sm" style={{ marginTop: '100px'}}>
                 <List>
                     <ListItem>
@@ -67,17 +67,17 @@ export class Confirm extends Component {
                         <Button
                           color="secondary"
                           variant="contained"
-                          id="voltar"
+                          id="botaoVoltar"
                           onClick={this.back}
                         >Voltar</Button>
                       </Grid>
                       <Grid item>
                         <Button
                           color="primary"
-                          id="finalizar"
+                          id="botaoConfirmar"
                           variant="contained"
                           onClick={this.continue}
-                        >Confirmar & Continuar</Button>
+                        >Confirmar e Continuar</Button>
                       </Grid>
                     </Grid>
                   </div>
@@ -85,6 +85,16 @@ export class Confirm extends Component {
                 </Container>
               </div>
             </main>
+
+            <footer id="footer" style={{ bottom: '0', position: "absolute", width: "100%" }}>
+            <AppBar position="relative" title="Enter User Details" >
+              <Toolbar>
+              <Copyright justify="center" />
+                <p>2022 - Todos os direitos reservados.</p>
+              </Toolbar>
+            </AppBar>
+
+            </footer>
             
          
         </>

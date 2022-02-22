@@ -4,7 +4,7 @@ import AppBar from '@material-ui/core/AppBar';
 import { ThemeProvider as MuiThemeProvider } from '@material-ui/core/styles';
 import TextField from '@material-ui/core/TextField';
 import Button from '@material-ui/core/Button';
-import { AttachFile } from '@material-ui/icons';
+import { AttachFile, Copyright } from '@material-ui/icons';
 import { Player } from 'video-react';
 import "../../node_modules/video-react/dist/video-react.css";
 import "../../node_modules/react-datepicker/dist/react-datepicker.css";
@@ -54,16 +54,16 @@ export class FormUserDetails extends Component {
                 defaultValue={values.localAula}
                 margin="normal"
                 fullWidth
-              />
-              <TextField
-                placeholder="Assunto da aula"
-                label="Assunto da aula"
-                id="assunto"
-                onChange={handleChange('assuntoAula')}
-                defaultValue={values.assuntoAula}
-                margin="normal"
-                fullWidth
-              />
+                />
+                <TextField
+                  placeholder="Assunto da aula"
+                  label="Assunto da aula"
+                  id="assunto"
+                  onChange={handleChange('assuntoAula')}
+                  defaultValue={values.assuntoAula}
+                  margin="normal"
+                  fullWidth
+                />
               <br /><br />
               <Player 
                 playsInline
@@ -71,6 +71,7 @@ export class FormUserDetails extends Component {
               <Typography variant="body1">Coloque o dia e a hora da aula</Typography>
               <TextField
                 placeholder="Digite a data"
+                id="data"
                 label="Data da aula"
                 onChange={handleChange('dataAula')}
                 defaultValue={values.dataAula}
@@ -84,6 +85,7 @@ export class FormUserDetails extends Component {
                 <TextField
                 placeholder="Digite a hora inicial"
                 label="Hora Inicial"
+                id="horaInicio"
                 onChange={handleChange('horaInicial')}
                 defaultValue={values.horaInicial}
                 margin="normal"
@@ -94,6 +96,7 @@ export class FormUserDetails extends Component {
                 <TextField
                 placeholder="Dgite a hora final"
                 label="Hora final"
+                id="horaFim"
                 onChange={handleChange('horaFinal')}
                 defaultValue={values.horaFinal}
                 margin="normal"
@@ -108,7 +111,7 @@ export class FormUserDetails extends Component {
               <Typography variant="body1">Escolha o intérprete para a aula</Typography>
               <br /> <br/>
               <FormControl fullWidth>
-                <InputLabel variant="standard" htmlFor="uncontrolled-native">
+                <InputLabel variant="standard" htmlFor="interpretes">
                   Intérprete
                 </InputLabel>
                 <NativeSelect
@@ -116,12 +119,12 @@ export class FormUserDetails extends Component {
                   defaultValue={values.interprete}
                   inputProps={{
                     name: 'interprete',
-                    id: 'uncontrolled-native',
+                    id: 'interpretes',
                   }}
                 >
                   <option value={1}>Selecione...</option>
                   <option value={"Maria da Silva"}>Maria da Silva</option>
-                  <option value={"João Pedro"}>João Pedro</option>
+                  <option value={"João Pedro Santos"}>João Pedro Santos</option>
                   <option value={"Daniela Alves"}>Daniela Alves</option>
                   
                 </NativeSelect>
@@ -135,7 +138,7 @@ export class FormUserDetails extends Component {
                     <Button
                       color="primary"
                       variant="contained"
-                      id="confirmar"
+                      id="botaoSalvar"
                       onClick={this.continue}
                     >Salvar</Button>
 
@@ -146,6 +149,16 @@ export class FormUserDetails extends Component {
                 </Container>
               </div>
             </main>
+
+            <footer id="footer" style={{ marginTop: '50px' }}>
+            <AppBar position="relative" title="Enter User Details" >
+              <Toolbar>
+              <Copyright justify="center" />
+                <p>2022 - Todos os direitos reservados.</p>
+              </Toolbar>
+            </AppBar>
+
+            </footer>
       </>
       </MuiThemeProvider>
     );
