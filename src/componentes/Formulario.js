@@ -7,8 +7,8 @@ import Success from './Success';
 export class Formulario extends Component {
   state = {
     step: 1,
-    firstName: '',
-    lastName: '',
+    localAula: '',
+    assuntoAula: '',
     email: '',
     occupation: '',
     city: '',
@@ -38,8 +38,8 @@ export class Formulario extends Component {
 
   render() {
     const { step } = this.state;
-    const { firstName, lastName, email, occupation, city, bio } = this.state;
-    const values = { firstName, lastName, email, occupation, city, bio };
+    const { localAula, assuntoAula, dataAula, horaInicial, horaFinal, interprete } = this.state;
+    const values = { localAula, assuntoAula, dataAula, horaInicial, horaFinal, interprete };
 
     switch (step) {
       case 1:

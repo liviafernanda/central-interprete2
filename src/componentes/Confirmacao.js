@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Dialog from '@material-ui/core/Dialog';
 import AppBar from '@material-ui/core/AppBar';
 import { Typography, Card, CardContent, CardMedia, CssBaseline, Grid, Toolbar, Container } from '@material-ui/core';
 import { ThemeProvider as MuiThemeProvider } from '@material-ui/core/styles';
@@ -21,7 +20,7 @@ export class Confirm extends Component {
 
   render() {
     const {
-      values: { firstName, lastName, email }
+      values: { localAula, assuntoAula, dataAula, horaInicial, horaFinal, interprete }
     } = this.props;
     return (
       <MuiThemeProvider>
@@ -41,13 +40,22 @@ export class Confirm extends Component {
                 <Container maxWidth="sm" style={{ marginTop: '100px'}}>
                 <List>
                     <ListItem>
-                      <ListItemText primary="First Name" secondary={firstName} />
+                      <ListItemText primary="Local da aula" secondary={localAula} />
                     </ListItem>
                     <ListItem>
-                      <ListItemText primary="Last Name" secondary={lastName} />
+                      <ListItemText primary="Assunto da aula" secondary={assuntoAula} />
                     </ListItem>
                     <ListItem>
-                      <ListItemText primary="Email" secondary={email} />
+                      <ListItemText primary="Data da aula" secondary={dataAula} />
+                    </ListItem>
+                    <ListItem>
+                      <ListItemText primary="Hora inicial" secondary={horaInicial} />
+                    </ListItem>
+                    <ListItem>
+                      <ListItemText primary="Hora final" secondary={horaFinal} />
+                    </ListItem>
+                    <ListItem>
+                      <ListItemText primary="Intérprete" secondary={interprete} />
                     </ListItem>
                     
                   </List>

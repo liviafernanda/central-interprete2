@@ -25,8 +25,8 @@ export class Success extends Component {
             maxWidth='sm'
           >
             <AppBar title="Success" />
-            <h1>Thank You For Your Submission</h1>
-            <p>You will get an email with further instructions.</p>
+            <h1>Obrigado pela confirmação</h1>
+            <p>Você receberá uma mensagem em seu email cadastrado contendo mais informações sobre sua solicitação.</p>
           </Dialog>
         </>
       </MuiThemeProvider>
