@@ -25,6 +25,7 @@ export class Confirm extends Component {
     return (
       <MuiThemeProvider>
         <>
+        <div style={{ minHeight: "550px"}}>
           <CssBaseline />
             <AppBar title="Confirmação" >
               <Toolbar>
@@ -85,8 +86,8 @@ export class Confirm extends Component {
                 </Container>
               </div>
             </main>
-
-            <footer id="footer" style={{ bottom: '0', position: "absolute", width: "100%" }}>
+            </div>
+            <footer id="footer" >
             <AppBar position="relative" title="Enter User Details" >
               <Toolbar>
               <Copyright justify="center" />
