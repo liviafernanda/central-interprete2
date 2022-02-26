@@ -1,4 +1,4 @@
-# Central do Intérprete da UFG para testes de aceitação sem utilizar requisitos de acessibilidade para usuários surdos
+## Central do Intérprete da UFG para testes de aceitação sem utilizar requisitos de acessibilidade para usuários surdos
 
 Este projeto refere-se à interface do sistema de Central de Intérpretes utilizado para requisição de intérpretes em Libras.
 
@@ -6,7 +6,7 @@ O sistema deve passar por um teste de aceitação automatizado, como parte do pr
 
 Esta tela em produção receberá os testes de aceitação sem a utilização dos requisitos de acessibilidade para usuários surdos. O teste é feito com Selenium e Cucumber.
 
-## Requisitos de acessibiliade para usuários surdos
+### Requisitos de acessibilidade para usuários surdos
 
 RQA01 Fornecer alternativa textual adaptada para alfabetizados em Libras.
 RQA02 Fornecer conteúdo textual simples e explicativo ou adaptado ao surdo para oconteúdo não textual.
