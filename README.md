@@ -9,15 +9,27 @@ Esta tela em produção receberá os testes de aceitação sem a utilização do
 ### Requisitos de acessibilidade para usuários surdos
 
 RQA01 Fornecer alternativa textual adaptada para alfabetizados em Libras.
+
 RQA02 Fornecer conteúdo textual simples e explicativo ou adaptado ao surdo para oconteúdo não textual.
+
 RQA03 Fornecer  conteúdo  textual  para  áudio  ao  vivo  em  linguagem  simples  ouadaptada para o usuário surdo
+
 RQA04 Fornecer controle de configurações na reprodução de mídias.
+
 RQA05 Fornecer vídeo em língua de sinais.
+
 RQA06 Fornecer legenda para vídeo em linguagem simples ou adaptada ao usuáriosurdo.
+
 RQA07 Possibilitar a compreensão de vídeo em língua de sinais.
+
 RQA08 Fornecer descrição de erros com feedback adaptada para o usuário surdo.
+
 RQA09 Permitir desfazer ações executadas no formulário.
+
 RQA10 Eliminar barreiras por tempo de preenchimento.
+
 RQA11 Fornecer descrição textual adaptada ao usuário surdo para auxiliar no preen-chimento de dados.
+
 RQA12 Fornecer avatares em língua de sinais para compreensão.
+
 RQA13 Fornecer barra de acessibilidade para facilitar a navegação.
