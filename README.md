@@ -1,70 +1,23 @@
-# Getting Started with Create React App
+# Central do Intérprete da UFG para testes de aceitação sem utilizar requisitos de acessibilidade para usuários surdos
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este projeto refere-se à interface do sistema de Central de Intérpretes utilizado para requisição de intérpretes em Libras.
 
-## Available Scripts
+O sistema deve passar por um teste de aceitação automatizado, como parte do projeto de pesquisa do mestrado da autora. 
 
-In the project directory, you can run:
+Esta tela em produção receberá os testes de aceitação sem a utilização dos requisitos de acessibilidade para usuários surdos. O teste é feito com Selenium e Cucumber.
 
-### `npm start`
+## Requisitos de acessibiliade para usuários surdos
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+RQA01 Fornecer alternativa textual adaptada para alfabetizados em Libras.
+RQA02 Fornecer conteúdo textual simples e explicativo ou adaptado ao surdo para oconteúdo não textual.
+RQA03 Fornecer  conteúdo  textual  para  áudio  ao  vivo  em  linguagem  simples  ouadaptada para o usuário surdo
+RQA04 Fornecer controle de configurações na reprodução de mídias.
+RQA05 Fornecer vídeo em língua de sinais.
+RQA06 Fornecer legenda para vídeo em linguagem simples ou adaptada ao usuáriosurdo.
+RQA07 Possibilitar a compreensão de vídeo em língua de sinais.
+RQA08 Fornecer descrição de erros com feedback adaptada para o usuário surdo.
+RQA09 Permitir desfazer ações executadas no formulário.
+RQA10 Eliminar barreiras por tempo de preenchimento.
+RQA11 Fornecer descrição textual adaptada ao usuário surdo para auxiliar no preen-chimento de dados.
+RQA12 Fornecer avatares em língua de sinais para compreensão.
+RQA13 Fornecer barra de acessibilidade para facilitar a navegação.
