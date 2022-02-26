@@ -4,7 +4,7 @@ import AppBar from '@material-ui/core/AppBar';
 import { ThemeProvider as MuiThemeProvider } from '@material-ui/core/styles';
 import TextField from '@material-ui/core/TextField';
 import Button from '@material-ui/core/Button';
-import { AttachFile, Copyright } from '@material-ui/icons';
+import { AttachFile, Copyright, MoreVert } from '@material-ui/icons';
 import { Player } from 'video-react';
 import "../../node_modules/video-react/dist/video-react.css";
 import "../../node_modules/react-datepicker/dist/react-datepicker.css";
@@ -155,6 +155,8 @@ export class FormUserDetails extends Component {
               <Toolbar>
               <Copyright justify="center" />
                 <p>2022 - Todos os direitos reservados.</p>
+                <MoreVert fontSize="medium"/>
+                <p>  A finalidade desta tela é o uso do teste de aceitação sem a utilização dos Requisitos de Acessibilidade</p>
               </Toolbar>
             </AppBar>
 
