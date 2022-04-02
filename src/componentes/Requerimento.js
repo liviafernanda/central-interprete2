@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Typography, InputLabel, FormControl, NativeSelect, CssBaseline, Grid, Toolbar, Container } from '@material-ui/core';
+import { Typography, Tooltip, InputLabel, FormControl, NativeSelect, CssBaseline, Grid, Toolbar, Container } from '@material-ui/core';
 import AppBar from '@material-ui/core/AppBar';
 import { ThemeProvider as MuiThemeProvider } from '@material-ui/core/styles';
 import TextField from '@material-ui/core/TextField';
@@ -135,13 +135,14 @@ export class FormUserDetails extends Component {
                 <div style={{ marginTop: '20px' }}>
                   <Grid container spacing={2} justify="center">
                     <Grid item>
+                    <Tooltip arrow title="Requerimento enviar">
                     <Button
                       color="primary"
                       variant="contained"
                       id="botaoSalvar"
                       onClick={this.continue}
                     >Salvar</Button>
-
+                    </Tooltip>
                     </Grid>
                   </Grid>
                 </div>
